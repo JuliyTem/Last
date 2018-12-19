@@ -10,5 +10,6 @@ int main()
 	TLex a(str);
 	a.convert(str);
 	
+	
 	return 0;
 }

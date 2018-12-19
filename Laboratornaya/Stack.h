@@ -150,7 +150,7 @@ public:
 	}
 	~Queue()
 	{
-		delete[] * p;
+		delete[]p;
 	}
 	bool is_empty()
 	{
@@ -214,10 +214,11 @@ public:
 	};
 	int pos(char *s, char c)
 	{
+		//s = -1;
 		int i = 0;
 		while (s[i] != '\0')
 		{
-			if (s[i] == c) return c;
+			if (s[i] == c) return i;
 			i++;
 		}
 		return -1;
